@@ -60,8 +60,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function PrimarySearchAppBar(props) {
 
-  console.log(props)
-
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -180,7 +178,7 @@ export default function PrimarySearchAppBar(props) {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            RoLink
           </Typography>
           <Search>
             <SearchIconWrapper>

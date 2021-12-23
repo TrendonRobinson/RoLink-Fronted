@@ -16,7 +16,7 @@
     -ms-flex: 5;
     flex: 5;
     padding-left: 20vw;
-    z-index: -2;
+    /* z-index: -2; */
 
     margin-top: 30px;
 }
@@ -26,11 +26,14 @@
 }
 
 .homeContainer .Feed .Feed-Wrapper {
-    width: 80%;
+    margin-left: 0;
 }
 
 .homeContainer .RightBar {
     -webkit-box-flex: 4;
     -ms-flex: 4;
     flex: 4;
+    justify-content: flex-start;
+    margin-top: 30px;
+    padding-left: 2%;
 }

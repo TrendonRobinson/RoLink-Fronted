@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
+import './rightbar.css'
 
 
 export default function RightBar(props) {
@@ -17,10 +18,10 @@ export default function RightBar(props) {
 
 
     return (
-        <div className="RightBar">
-           <Card className="RightBar-Wrapper">
+        <div className="Post RightBar">
+           <Card className="Post-Wrapper RightBar-Wrapper">
                 <h4>
-                    Create Post
+                    News
                 </h4>
                 <div className='Post-Text'>
                     <Avatar alt="Remy Sharp" src="" />

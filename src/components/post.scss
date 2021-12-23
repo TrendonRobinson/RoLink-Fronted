@@ -5,9 +5,10 @@
     .Post-Wrapper {
         // display: flex;
         // flex-direction: column;
-
         box-shadow: none;
-        filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.192));
+        filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.1));
+
+        // margin-left: ;
 
         padding: 10px 10px;
         h4 {
@@ -16,14 +17,53 @@
             padding-bottom: 20px;
             border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
         }
-
         .Post-Text {
             display: flex;
             padding: 20px;
 
-            input {
-                margin-left: 20px;
+            .Avatar {
+                // margin-top: 5%;
+                // align-self: center;
+            }
+
+            // input {
+            //     margin-left: 20px;
+            //     border: none;
+            //     overflow: hidden;
+
+            //
+            // }
+            textarea {
+                width: 100%;
+
                 border: none;
+                margin-left: 4px;
+                overflow: hidden;
+                transition: 0.1s;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .Post-Buttons {
+            display: flex;
+            // flex-wrap: wrap;
+            justify-content: left;
+
+            .Post-Quick-Button {
+                margin: 5px 5px;
+                background: rgba(0, 195, 255, 0.131);
+
+                &.Post-Button {
+                    // justify-self: center;
+                    align-self: flex-end;
+                    margin: auto auto !important;
+                    margin-right: 0 !important;
+                    color: white;
+                    background: rgb(255, 0, 0);
+                }
             }
         }
     }

@@ -13,7 +13,7 @@ export default function Login(props) {
 
   // States
   let [inputs, setInputs] = useState({
-    email: '',
+    username: '',
     password: ''
   })
 
@@ -33,17 +33,15 @@ export default function Login(props) {
     e.preventDefault()
 
     const postRequest = async () => {
+      let data = {
+        "username": inputs.username,
+        "password": inputs.password,
+      }
+
       try {
-          const resp = await axios.post(url, {
-              "user" : {
-                  "email": inputs.email,
-                  "password": inputs.password,
-              }
-          });
-          if (resp) {
-            console.log(resp)
-            localStorage.setItem('user', resp.data.user.token)
-            setAccount(account)
+          const resp = await axios.post(url, data);
+          if (resp.data.key) {
+            localStorage.setItem('user', resp.data.key)
             navigate(`/home`);
           }
       } catch (err) {
@@ -73,7 +71,7 @@ export default function Login(props) {
                         <form onSubmit={handleSubmit}>
                             
                             <div className="Field">
-                                <input name="email"  onChange={handleChange} type="email" placeholder="Email" value={inputs.email} />
+                                <input name="username"  onChange={handleChange} type="username" placeholder="Username" value={inputs.username} />
                             </div>
                             
                             

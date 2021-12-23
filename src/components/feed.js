@@ -6,6 +6,7 @@ import Paper from '@mui/material/Paper';
 
 
 import Post from './post'
+import UserPost from './userpost'
 
 
 export default function Feed(props) {
@@ -22,6 +23,7 @@ export default function Feed(props) {
 
             <div className="Feed-Wrapper">
                 <Post/>
+                <UserPost/>
             </div>
         </div>
     );

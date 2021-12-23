@@ -5,8 +5,8 @@
 .Post .Post-Wrapper {
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.192));
-          filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.192));
+  -webkit-filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.1));
   padding: 10px 10px;
 }
 
@@ -25,8 +25,39 @@
   padding: 20px;
 }
 
-.Post .Post-Wrapper .Post-Text input {
-  margin-left: 20px;
+.Post .Post-Wrapper .Post-Text textarea {
+  width: 100%;
   border: none;
+  margin-left: 4px;
+  overflow: hidden;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.Post .Post-Wrapper .Post-Text textarea:focus {
+  outline: none;
+}
+
+.Post .Post-Wrapper .Post-Buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.Post .Post-Wrapper .Post-Buttons .Post-Quick-Button {
+  margin: 5px 5px;
+  background: rgba(0, 195, 255, 0.131);
+}
+
+.Post .Post-Wrapper .Post-Buttons .Post-Quick-Button.Post-Button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: auto auto !important;
+  margin-right: 0 !important;
+  color: white;
+  background: red;
 }
 /*# sourceMappingURL=post.css.map */
