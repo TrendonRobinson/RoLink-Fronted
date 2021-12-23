@@ -1,0 +1,96 @@
+.panelButton {
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+  height: 50px;
+}
+
+.panelButton .tooltip {
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  -webkit-transition: 0s;
+  transition: 0s;
+  color: black;
+}
+
+.panelButton:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.panelButton a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background: #ff3f3f;
+}
+
+.panelButton a .links_name {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.panelButton a svg {
+  color: #fff;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.panelButton a:hover {
+  background: #fff;
+  border: #ff3f3f solid 1px;
+}
+
+.panelButton a:hover .links_name {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #ff3f3f;
+}
+
+.panelButton a:hover svg {
+  color: #ff3f3f;
+}
+
+.sidebar.open li .tooltip {
+  display: none;
+}
+
+.sidebar.open li a .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+/*# sourceMappingURL=panelButton.css.map */

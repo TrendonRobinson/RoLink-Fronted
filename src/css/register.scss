@@ -1,0 +1,109 @@
+.background {
+    background-color: #ff3f3f;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+}
+
+.signup-box {
+    width: 50vw;
+    max-width: 35vw;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 3px;
+
+    text-align: center;
+
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+
+        .Name {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .Submit {
+            align-self: center;
+            margin-top: 20px;
+            padding: 10px 0px;
+            width: 35%;
+            border: none;
+            color: white;
+            background-color: #ff3f3f;
+            border: 1px solid #ff3f3f00;
+            transition: 0.5s;
+        }
+
+        Button {
+            padding: 10px 0px;
+            width: 35%;
+        }
+
+        .Submit:hover {
+            color: #ff3f3f;
+            background-color: white;
+            border: 1px solid #ff3f3f;
+            transition: 0.5s;
+        }
+
+        .Field {
+            padding: 5px 20px;
+            width: 100%;
+
+            p {
+                margin: 0px 0px;
+                padding: 0px 0px;
+
+                color: #ff3f3f;
+                text-align: left;
+                font-size: 80%;
+            }
+
+            label {
+                position: absolute;
+                // transform: translate(0%, 60%);
+                font-size: 100%;
+                color: #d3d3d3;
+                transition: 0.2s all;
+                cursor: text;
+            }
+
+            input {
+                width: 100%;
+                border: 0;
+                outline: 0;
+                padding: 0.5rem 0;
+                border-bottom: 2px solid #d3d3d3;
+                box-shadow: none;
+                color: #111;
+                transition: 0.5s;
+            }
+
+            input:hover {
+                border-color: #ff3f3f73;
+                transition: 0.5s;
+            }
+
+            input:focus {
+                border-color: #ff3f3f;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.Field {
+    display: flex;
+    flex-direction: column;
+}

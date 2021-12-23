@@ -1,0 +1,32 @@
+.Post {
+  color: black;
+}
+
+.Post .Post-Wrapper {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.192));
+          filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.192));
+  padding: 10px 10px;
+}
+
+.Post .Post-Wrapper h4 {
+  -ms-grid-column-align: left;
+      justify-self: left;
+  text-align: left;
+  padding-bottom: 20px;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
+
+.Post .Post-Wrapper .Post-Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.Post .Post-Wrapper .Post-Text input {
+  margin-left: 20px;
+  border: none;
+}
+/*# sourceMappingURL=post.css.map */

@@ -1,0 +1,30 @@
+.Post {
+    color: black;
+    // right: 30%;
+
+    .Post-Wrapper {
+        // display: flex;
+        // flex-direction: column;
+
+        box-shadow: none;
+        filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.192));
+
+        padding: 10px 10px;
+        h4 {
+            justify-self: left;
+            text-align: left;
+            padding-bottom: 20px;
+            border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+        }
+
+        .Post-Text {
+            display: flex;
+            padding: 20px;
+
+            input {
+                margin-left: 20px;
+                border: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.background {
+  background-color: #ff3f3f;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup-box {
+  width: 50vw;
+  max-width: 35vw;
+  height: auto;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+}
+
+.signup-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup-box form .Name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.signup-box form .Submit {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 20px;
+  padding: 10px 0px;
+  width: 35%;
+  border: none;
+  color: white;
+  background-color: #ff3f3f;
+  border: 1px solid #ff3f3f00;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-box form Button {
+  padding: 10px 0px;
+  width: 35%;
+}
+
+.signup-box form .Submit:hover {
+  color: #ff3f3f;
+  background-color: white;
+  border: 1px solid #ff3f3f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-box form .Field {
+  padding: 5px 20px;
+  width: 100%;
+}
+
+.signup-box form .Field p {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  color: #ff3f3f;
+  text-align: left;
+  font-size: 80%;
+}
+
+.signup-box form .Field label {
+  position: absolute;
+  font-size: 100%;
+  color: #d3d3d3;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  cursor: text;
+}
+
+.signup-box form .Field input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d3d3d3;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #111;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-box form .Field input:hover {
+  border-color: #ff3f3f73;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signup-box form .Field input:focus {
+  border-color: #ff3f3f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=register.css.map */

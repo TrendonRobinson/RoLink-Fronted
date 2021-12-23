@@ -1,0 +1,28 @@
+/* Google Font Link */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  margin-top: 4rem;
+  background-color: white;
+  /* Black*/
+  -webkit-filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.2));
+  padding: 6px 14px;
+  z-index: -1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sidebar .nav-list {
+  padding-left: 0px;
+  margin-top: 20px;
+  height: 100%;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+/*# sourceMappingURL=leftbar.css.map */
